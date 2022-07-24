@@ -1,20 +1,31 @@
+html {
+    --dark-background: #1f2937;
+    --hero-main-text: #f9faf8;
+    --hero-secondary-text: #e5e7eb;
+    --button: #3882f6;
+    --info-header-text: #1f2937;
+    --quote-background: #e5e7eb;
+    --quote-text: #1f2937;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Header */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1F2937;
+    background-color: var(--dark-background);
     padding: 16px;
 }
 
 .logo {
     font-size: 24px;
-    color: #F9FAF8;
+    color: var(--hero-main-text);
     font-weight: bold;
 }
 
@@ -35,6 +46,9 @@ ul.links {
 }
 
 .link {
-    color: #E5E7EB;
+    color: var(--hero-secondary-text);
     text-decoration: none;
 }
+
+/* Hero */
+
