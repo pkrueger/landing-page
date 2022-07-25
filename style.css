@@ -2,10 +2,11 @@ html {
     --dark-background: #1f2937;
     --hero-main-text: #f9faf8;
     --hero-secondary-text: #e5e7eb;
-    --button: #3882f6;
+    --color-splash: #3882f6;
     --info-header-text: #1f2937;
     --quote-background: #e5e7eb;
     --quote-text: #1f2937;
+    --page-padding: 300px;
 }
 
 body {
@@ -15,12 +16,13 @@ body {
 }
 
 /* Header */
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--dark-background);
-    padding: 16px;
+    padding: 16px var(--page-padding);
 }
 
 .logo {
@@ -29,15 +31,7 @@ body {
     font-weight: bold;
 }
 
-.flex-left {
-    margin-left: 200px;
-}
-
-.links.flex-right {
-    margin-right: 200px;
-}
-
-ul.links {
+ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -51,4 +45,102 @@ ul.links {
 }
 
 /* Hero */
+
+.hero {
+    background-color: var(--dark-background);
+    padding: 100px var(--page-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.hero-left {
+    width: 500px;
+    flex-shrink: 0;
+}
+
+.hero-main {
+    margin: 0;
+    padding: 0;
+    color: var(--hero-main-text);
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-subtext {
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: var(--hero-secondary-text);
+    font-size: 18px;
+}
+
+.sign-up {
+    color: var(--hero-main-text);
+    background-color: var(--color-splash);
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 18px;
+}
+
+.top-button {
+    border: 0;
+}
+
+.hero-right {
+    width: 600px;
+    height: 250px;
+    flex-shrink: 0;
+    background-color: rgba(229, 231, 235, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-text {
+    color: var(--hero-secondary-text);
+}
+
+/* Info */
+
+.info {
+    padding: 0 var(--page-padding) 100px;
+}
+
+.info-main {
+    color: var(--info-header-text);
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    padding: 35px 0;
+}
+
+.square-images {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.square-image-and-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.square-image {
+    width: 125px;
+    height: 125px;
+    border: 3px solid var(--color-splash);
+    border-radius: 10px;
+}
+
+.square-image-subtext {
+    text-align: center;
+    width: 125px;
+    color: var(--quote-text);
+}
+
+/* Quote */
 
